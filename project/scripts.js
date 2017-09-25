@@ -29,3 +29,15 @@ $light.appendTo($('body'))
 const $play = $('<button>').attr('id', 'Play')
 $play.text('Play')
 $play.appendTo($('body'))
+let time = 0
+const setTimer = () => {
+	const timer = setInterval(() => {
+		time++
+
+		// if(time === 0){
+		// 	clearInterval(timer)
+		// 	round++;
+			// $('modal-hidden'.toggleClass('.modal')
+	
+		$('#timer').text(`timer: ${time}second old`);
+	}, 1000)}
