@@ -1,5 +1,74 @@
-body {
-	background: url(http://static.pokemonpets.com/images/monsters-images-800-800/4-Charmander.png);
-	background-repeat: no-repeat;
-	background-position: inherit;
+body, html {
+    height: 100%;
 }
+html {
+	background-image: url(https://media1.giphy.com/media/l55HcRDH2SP7O/200_s.gif);
+	height: 100%; 
+	/* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.darkness {
+	background: black;
+}
+button {
+  color: white;
+	height: 80px;
+	width: 110px;
+	background-image: url(https://cdn.bulbagarden.net/upload/3/38/Rare_Candy_RG.png);
+  background-size: 100%; /* To fill the dimensions of container (button), or */
+  background-image: 40px 110px; /* to specify dimensions explicitly */
+  background-color: transparent;
+
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.metrics {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-content: space-around;
+  font-size: 40px;
+  color: white;
+}
+
+#tomagatchi {
+	background-image: url(http://www.pinkpt.com/neodex/images/0/0e/Red_shoyru_cropped.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: transparent;
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    width:10em;
+    height:10em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+}
+
+#tomagatchi {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 50%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
